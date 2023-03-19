@@ -305,3 +305,23 @@ body {
 .button-container .button:nth-child(2) {
   float: right;
 }
+
+div.transbox {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  transform: translateY(-50%);
+}
+
+div.transbox p {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold;
+  color: #000000;
+}
