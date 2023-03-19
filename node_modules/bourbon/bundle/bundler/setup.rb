@@ -1,0 +1,42 @@
+require 'rbconfig'
+ruby_engine = RUBY_ENGINE
+ruby_version = RbConfig::CONFIG["ruby_version"]
+path = File.expand_path('..', __FILE__)
+kernel = (class << ::Kernel; self; end)
+[kernel, ::Kernel].each do |k|
+  if k.private_method_defined?(:gem_original_require)
+    private_require = k.private_method_defined?(:require)
+    k.send(:remove_method, :require)
+    k.send(:define_method, :require, k.instance_method(:gem_original_require))
+    k.send(:private, :require) if private_require
+  end
+end
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/rake-13.0.6/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/public_suffix-5.0.1/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/addressable-2.8.1/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/childprocess-3.0.0/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/contracts-0.17/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/builder-3.2.4/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/gherkin-4.1.3/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/cucumber-core-1.5.0/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/cucumber-wire-0.0.1/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/diff-lcs-1.5.0/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/multi_json-1.15.0/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/multi_test-1.1.0/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/cucumber-2.99.0/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/extensions/x86_64-darwin-21/3.0.0/ffi-1.15.5")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/ffi-1.15.5/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/rspec-support-3.12.0/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/rspec-expectations-3.12.2/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/thor-1.2.1/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/aruba-0.14.14/lib")
+$:.unshift File.expand_path("#{path}/../../lib")
+$:.unshift File.expand_path("#{path}/")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/css_parser-1.14.0/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/rb-fsevent-0.11.2/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/rb-inotify-0.10.1/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/rspec-core-3.12.0/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/rspec-mocks-3.12.3/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/rspec-3.12.0/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/sass-listen-4.0.0/lib")
+$:.unshift File.expand_path("#{path}/../#{ruby_engine}/#{ruby_version}/gems/sass-3.7.4/lib")
