@@ -208,3 +208,39 @@ nav {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  max-width: 350px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.card_img {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: -60px auto 0;
+}
+
+.card_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card_info {
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+a:hover {
+  color: black;
+}
