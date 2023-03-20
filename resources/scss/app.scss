@@ -227,3 +227,15 @@ a {
 a:hover{
   color: black;
 }
+//about us
+.flex {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .flex {
+        flex-direction: column;
+    }
+}
