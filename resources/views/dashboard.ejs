@@ -85,16 +85,22 @@
     </table>
     <div class="flex w-full gap-14">
       <div class="grid h-20 flex-grow card bg-black-base-300 rounded-box place-items-center ml-12 mb-12"><label for="countries" class="block mb-2 text-sm font-medium text-black-900 dark:text-white">Select an option</label>
-        <select id="countries" class="bg-opacity-100 bg-white-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-black-600 dark:placeholder-black-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected>Choose a Book</option>
-          <option value="US"><a href="/book/lol.pdf">Light on Life</a></option>
-          <option value="CA"><a href="/book/lol.pdf">Light on Life</a></option>
-          <option value="FR"><a href="/book/lol.pdf">Light on Life</a></option>
-          <option value="DE"><a href="/book/lol.pdf">Light on Life</a></option>
-        </select></div>
+        <ul class="menu menu-horizontal bg-base-100 rounded-box p-2">
+          
+          <!-- tabindex will make the parent menu focusable to keep the submenu open if it's focused -->
+          <li tabindex="0">
+            <span>Books</span>
+            <ul class="rounded-box bg-base-100 p-2">
+              <li><a href="/book/lol.pdf">Light on Life</a></li>
+              <li><a href="/book/eym.pdf">Everyday Yoga Meditation</a></li>
+              <li><a href="/book/loy.pdf">Light of Yoga</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
       <div class="divider divider-horizontal bg-blue-600" ></div>
-      <div class="grid h-20 flex-grow card bg-black-base-300 rounded-box place-items-center mb-12">content</div>
+      <div class="grid h-20 flex-grow card bg-black-base-300 rounded-box place-items-center mb-12"><span>Click to play!</span><a href="/game"><img src="/img/game_logo.png" alt="logo" style="border-radius: 50%; height: 90px; width: 90px;"></a></div>
       <div class="divider divider-horizontal bg-blue-600"></div>
       <div class="grid h-20 flex-grow card bg-black-base-300 rounded-box place-items-center mb-12">content</div>
     </div>
-    <a href="/book/lol.pdf">Light on Life</a>

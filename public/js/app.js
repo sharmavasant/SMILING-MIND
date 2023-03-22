@@ -40,56 +40,125 @@ console.log(songs);
 songs.forEach(myfunction);
 function myfunction(item, index, arr) {
   item.addEventListener("click", function (e) {
+    //var sing = "sing"+(index+1);
+    //console.log(sing);
     if (song1.paused) {
-      //console.log("pause")
+      console.log(item);
       song1.play();
       e.target.src = "http://localhost:3300/img/pause.png";
     } else if (song1.played) {
       song1.pause();
       e.target.src = "http://localhost:3300/img/play.png";
     }
+    /*
+    if(song2.paused) {
+        //console.log("pause")
+        song2.play();
+        e.target.src = "http://localhost:3300/img/pause.png"
+    }
+    else if(song2.played){
+        song2.pause();
+        e.target.src = "http://localhost:3300/img/play.png"
+    }
+    if(song3.paused) {
+        //console.log("pause")
+        song3.play();
+        e.target.src = "http://localhost:3300/img/pause.png"
+    }
+    else if(song3.played){
+        song3.pause();
+        e.target.src = "http://localhost:3300/img/play.png"
+    }
+    if(song4.paused) {
+        //console.log("pause")
+        song4.play();
+        e.target.src = "http://localhost:3300/img/pause.png"
+    }
+    else if(song4.played){
+        song4.pause();
+        e.target.src = "http://localhost:3300/img/play.png"
+    }
+    if(song5.paused) {
+        //console.log("pause")
+        song5.play();
+        e.target.src = "http://localhost:3300/img/pause.png"
+    }
+    else if(song5.played){
+        song5.pause();
+        e.target.src = "http://localhost:3300/img/play.png"
+    }
+    if(song6.paused) {
+        //console.log("pause")
+        song6.play();
+        e.target.src = "http://localhost:3300/img/pause.png"
+        console.log(song6)
+    }
+    else if(song6.played){
+        song6.pause();
+        e.target.src = "http://localhost:3300/img/play.png"
+    }*/
+  });
+
+  item.addEventListener("click", function (e) {
+    //var sing = "sing"+(index+1);
+    //console.log(sing);
     if (song2.paused) {
-      //console.log("pause")
+      console.log(item);
       song2.play();
       e.target.src = "http://localhost:3300/img/pause.png";
     } else if (song2.played) {
       song2.pause();
       e.target.src = "http://localhost:3300/img/play.png";
     }
-    if (song3.paused) {
-      //console.log("pause")
-      song3.play();
-      e.target.src = "http://localhost:3300/img/pause.png";
-    } else if (song3.played) {
-      song3.pause();
-      e.target.src = "http://localhost:3300/img/play.png";
+    /*
+    if(song2.paused) {
+        //console.log("pause")
+        song2.play();
+        e.target.src = "http://localhost:3300/img/pause.png"
     }
-    if (song4.paused) {
-      //console.log("pause")
-      song4.play();
-      e.target.src = "http://localhost:3300/img/pause.png";
-    } else if (song4.played) {
-      song4.pause();
-      e.target.src = "http://localhost:3300/img/play.png";
+    else if(song2.played){
+        song2.pause();
+        e.target.src = "http://localhost:3300/img/play.png"
     }
-    if (song5.paused) {
-      //console.log("pause")
-      song5.play();
-      e.target.src = "http://localhost:3300/img/pause.png";
-    } else if (song5.played) {
-      song5.pause();
-      e.target.src = "http://localhost:3300/img/play.png";
+    if(song3.paused) {
+        //console.log("pause")
+        song3.play();
+        e.target.src = "http://localhost:3300/img/pause.png"
     }
-    if (song6.paused) {
-      //console.log("pause")
-      song6.play();
-      e.target.src = "http://localhost:3300/img/pause.png";
-      console.log(song6);
-    } else if (song6.played) {
-      song6.pause();
-      e.target.src = "http://localhost:3300/img/play.png";
+    else if(song3.played){
+        song3.pause();
+        e.target.src = "http://localhost:3300/img/play.png"
     }
+    if(song4.paused) {
+        //console.log("pause")
+        song4.play();
+        e.target.src = "http://localhost:3300/img/pause.png"
+    }
+    else if(song4.played){
+        song4.pause();
+        e.target.src = "http://localhost:3300/img/play.png"
+    }
+    if(song5.paused) {
+        //console.log("pause")
+        song5.play();
+        e.target.src = "http://localhost:3300/img/pause.png"
+    }
+    else if(song5.played){
+        song5.pause();
+        e.target.src = "http://localhost:3300/img/play.png"
+    }
+    if(song6.paused) {
+        //console.log("pause")
+        song6.play();
+        e.target.src = "http://localhost:3300/img/pause.png"
+        console.log(song6)
+    }
+    else if(song6.played){
+        song6.pause();
+        e.target.src = "http://localhost:3300/img/play.png"
+    }*/
   });
+
   //console.log(item.src)
 }
 
@@ -205,71 +274,6 @@ console.log(numberOfSongs);
 */
 
 /*****************************************************************************************************************************************/
-//game configuration
-score = 0;
-cross = true;
-audio = new Audio('/music/music.mp3');
-audiogo = new Audio('/music/gameover.mp3');
-setTimeout(function () {
-  audio.play();
-}, 1000);
-document.onkeydown = function (e) {
-  console.log("Key code is: ", e.keyCode);
-  if (e.keyCode == 38) {
-    dino = document.querySelector('.dino');
-    dino.classList.add('animateDino');
-    setTimeout(function () {
-      dino.classList.remove('animateDino');
-    }, 700);
-  }
-  if (e.keyCode == 39) {
-    dino = document.querySelector('.dino');
-    dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-    dino.style.left = dinoX + 112 + "px";
-  }
-  if (e.keyCode == 37) {
-    dino = document.querySelector('.dino');
-    dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-    dino.style.left = dinoX - 112 + "px";
-  }
-};
-setInterval(function () {
-  dino = document.querySelector('.dino');
-  gameOver = document.querySelector('.gameOver');
-  obstacle = document.querySelector('.obstacle');
-  dx = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-  dy = parseInt(window.getComputedStyle(dino, null).getPropertyValue('top'));
-  ox = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('left'));
-  oy = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('top'));
-  offsetX = Math.abs(dx - ox);
-  offsetY = Math.abs(dy - oy);
-  // console.log(offsetX, offsetY)
-  if (offsetX < 73 && offsetY < 52) {
-    gameOver.innerHTML = "Game Over - Reload to Play Again";
-    obstacle.classList.remove('obstacleAni');
-    audiogo.play();
-    setTimeout(function () {
-      audiogo.pause();
-      audio.pause();
-    }, 1000);
-  } else if (offsetX < 145 && cross) {
-    score += 1;
-    updateScore(score);
-    cross = false;
-    setTimeout(function () {
-      cross = true;
-    }, 1000);
-    setTimeout(function () {
-      aniDur = parseFloat(window.getComputedStyle(obstacle, null).getPropertyValue('animation-duration'));
-      newDur = aniDur - 0.1;
-      obstacle.style.animationDuration = newDur + 's';
-      console.log('New animation duration: ', newDur);
-    }, 500);
-  }
-}, 10);
-function updateScore(score) {
-  scoreCont.innerHTML = "Your Score: " + score;
-}
 
 /***/ }),
 
