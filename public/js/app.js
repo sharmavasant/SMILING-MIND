@@ -23,145 +23,153 @@ hamburger.addEventListener('click', function () {
 
 /*******************************************************************************************************************************************************/
 //music backend
+/*
 var icon1 = document.getElementById("song 1");
 var icon2 = document.getElementById("song 2");
 var icon3 = document.getElementById("song 3");
 var icon4 = document.getElementById("song 4");
 var icon5 = document.getElementById("song 5");
 var icon6 = document.getElementById("song 6");
-var songs = [icon1, icon2, icon3, icon4, icon5, icon6];
+
+var songs = [icon1,icon2,icon3,icon4,icon5,icon6]
+
 var song1 = document.getElementById("sing 1");
 var song2 = document.getElementById("sing 2");
 var song3 = document.getElementById("sing 3");
 var song4 = document.getElementById("sing 4");
 var song5 = document.getElementById("sing 5");
 var song6 = document.getElementById("sing 6");
-console.log(songs);
+console.log(songs)
+
 songs.forEach(myfunction);
-function myfunction(item, index, arr) {
-  item.addEventListener("click", function (e) {
-    //var sing = "sing"+(index+1);
-    //console.log(sing);
-    if (song1.paused) {
-      console.log(item);
-      song1.play();
-      e.target.src = "http://localhost:3300/img/pause.png";
-    } else if (song1.played) {
-      song1.pause();
-      e.target.src = "http://localhost:3300/img/play.png";
-    }
-    /*
-    if(song2.paused) {
-        //console.log("pause")
-        song2.play();
-        e.target.src = "http://localhost:3300/img/pause.png"
-    }
-    else if(song2.played){
-        song2.pause();
-        e.target.src = "http://localhost:3300/img/play.png"
-    }
-    if(song3.paused) {
-        //console.log("pause")
-        song3.play();
-        e.target.src = "http://localhost:3300/img/pause.png"
-    }
-    else if(song3.played){
-        song3.pause();
-        e.target.src = "http://localhost:3300/img/play.png"
-    }
-    if(song4.paused) {
-        //console.log("pause")
-        song4.play();
-        e.target.src = "http://localhost:3300/img/pause.png"
-    }
-    else if(song4.played){
-        song4.pause();
-        e.target.src = "http://localhost:3300/img/play.png"
-    }
-    if(song5.paused) {
-        //console.log("pause")
-        song5.play();
-        e.target.src = "http://localhost:3300/img/pause.png"
-    }
-    else if(song5.played){
-        song5.pause();
-        e.target.src = "http://localhost:3300/img/play.png"
-    }
-    if(song6.paused) {
-        //console.log("pause")
-        song6.play();
-        e.target.src = "http://localhost:3300/img/pause.png"
-        console.log(song6)
-    }
-    else if(song6.played){
-        song6.pause();
-        e.target.src = "http://localhost:3300/img/play.png"
-    }*/
-  });
 
-  item.addEventListener("click", function (e) {
-    //var sing = "sing"+(index+1);
-    //console.log(sing);
-    if (song2.paused) {
-      console.log(item);
-      song2.play();
-      e.target.src = "http://localhost:3300/img/pause.png";
-    } else if (song2.played) {
-      song2.pause();
-      e.target.src = "http://localhost:3300/img/play.png";
-    }
-    /*
-    if(song2.paused) {
-        //console.log("pause")
-        song2.play();
-        e.target.src = "http://localhost:3300/img/pause.png"
-    }
-    else if(song2.played){
-        song2.pause();
-        e.target.src = "http://localhost:3300/img/play.png"
-    }
-    if(song3.paused) {
-        //console.log("pause")
-        song3.play();
-        e.target.src = "http://localhost:3300/img/pause.png"
-    }
-    else if(song3.played){
-        song3.pause();
-        e.target.src = "http://localhost:3300/img/play.png"
-    }
-    if(song4.paused) {
-        //console.log("pause")
-        song4.play();
-        e.target.src = "http://localhost:3300/img/pause.png"
-    }
-    else if(song4.played){
-        song4.pause();
-        e.target.src = "http://localhost:3300/img/play.png"
-    }
-    if(song5.paused) {
-        //console.log("pause")
-        song5.play();
-        e.target.src = "http://localhost:3300/img/pause.png"
-    }
-    else if(song5.played){
-        song5.pause();
-        e.target.src = "http://localhost:3300/img/play.png"
-    }
-    if(song6.paused) {
-        //console.log("pause")
-        song6.play();
-        e.target.src = "http://localhost:3300/img/pause.png"
-        console.log(song6)
-    }
-    else if(song6.played){
-        song6.pause();
-        e.target.src = "http://localhost:3300/img/play.png"
-    }*/
-  });
+function myfunction(item,index,arr) {
+    item.addEventListener("click", (e) => {
+        //var sing = "sing"+(index+1);
+        //console.log(sing);
+        if(song1.paused) {
+            console.log(item)
+            song1.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+        }
+        else if(song1.played){
+            song1.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+        /*
+        if(song2.paused) {
+            //console.log("pause")
+            song2.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+        }
+        else if(song2.played){
+            song2.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+        if(song3.paused) {
+            //console.log("pause")
+            song3.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+        }
+        else if(song3.played){
+            song3.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+        if(song4.paused) {
+            //console.log("pause")
+            song4.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+        }
+        else if(song4.played){
+            song4.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+        if(song5.paused) {
+            //console.log("pause")
+            song5.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+        }
+        else if(song5.played){
+            song5.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+        if(song6.paused) {
+            //console.log("pause")
+            song6.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+            console.log(song6)
+        }
+        else if(song6.played){
+            song6.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+    })
+    item.addEventListener("click", (e) => {
+        //var sing = "sing"+(index+1);
+        //console.log(sing);
+        if(song2.paused) {
+            console.log(item)
+            song2.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+        }
+        else if(song2.played){
+            song2.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+        /*
+        if(song2.paused) {
+            //console.log("pause")
+            song2.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+        }
+        else if(song2.played){
+            song2.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+        if(song3.paused) {
+            //console.log("pause")
+            song3.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+        }
+        else if(song3.played){
+            song3.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+        if(song4.paused) {
+            //console.log("pause")
+            song4.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+        }
+        else if(song4.played){
+            song4.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+        if(song5.paused) {
+            //console.log("pause")
+            song5.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+        }
+        else if(song5.played){
+            song5.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+        if(song6.paused) {
+            //console.log("pause")
+            song6.play();
+            e.target.src = "http://localhost:3300/img/pause.png"
+            console.log(song6)
+        }
+        else if(song6.played){
+            song6.pause();
+            e.target.src = "http://localhost:3300/img/play.png"
+        }
+    })
 
-  //console.log(item.src)
+    
+
+    //console.log(item.src)
 }
-
+*/
 //******************************************************************************************************************************************************/
 /*
 var numberOfSongs = document.querySelectorAll(".song").length;
@@ -272,6 +280,23 @@ var numberOfSongs = document.querySelectorAll(".song").length;
 
 console.log(numberOfSongs);
 */
+//*****************************************************************************************************************************************/
+
+var audioElement;
+function playMusic(musicFile) {
+  if (audioElement) {
+    audioElement.pause();
+    audioElement = null;
+  }
+  audioElement = new Audio(musicFile);
+  audioElement.play();
+}
+function stopMusic() {
+  if (audioElement) {
+    audioElement.pause();
+    audioElement = null;
+  }
+}
 
 /*****************************************************************************************************************************************/
 

@@ -15,6 +15,7 @@ hamburger.addEventListener('click', ()=>{
 
 /*******************************************************************************************************************************************************/
 //music backend
+/*
 var icon1 = document.getElementById("song 1");
 var icon2 = document.getElementById("song 2");
 var icon3 = document.getElementById("song 3");
@@ -93,7 +94,7 @@ function myfunction(item,index,arr) {
         else if(song6.played){
             song6.pause();
             e.target.src = "http://localhost:3300/img/play.png"
-        }*/
+        }
     })
     item.addEventListener("click", (e) => {
         //var sing = "sing"+(index+1);
@@ -153,14 +154,14 @@ function myfunction(item,index,arr) {
         else if(song6.played){
             song6.pause();
             e.target.src = "http://localhost:3300/img/play.png"
-        }*/
+        }
     })
 
     
 
     //console.log(item.src)
 }
-
+*/
 //******************************************************************************************************************************************************/
 /*
 var numberOfSongs = document.querySelectorAll(".song").length;
@@ -271,5 +272,24 @@ var numberOfSongs = document.querySelectorAll(".song").length;
 
 console.log(numberOfSongs);
 */
+//*****************************************************************************************************************************************/
+
+var audioElement;
+
+		function playMusic(musicFile) {
+			if (audioElement) {
+				audioElement.pause();
+				audioElement = null;
+			}
+			audioElement = new Audio(musicFile);
+			audioElement.play();
+		}
+
+		function stopMusic() {
+			if (audioElement) {
+				audioElement.pause();
+				audioElement = null;
+			}
+		}
 
 /*****************************************************************************************************************************************/
