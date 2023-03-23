@@ -1,7 +1,7 @@
 function dashboardController() {
     return {
         index(req,res) {
-            return res.render('dashboard');
+            return res.render('users/dashboard');
         }
     }
 }

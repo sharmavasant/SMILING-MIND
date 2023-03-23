@@ -12,10 +12,10 @@ const MongoDbStore = require('connect-mongo')(session)
 const passport = require('passport')
 const Emitter = require('events')
 const bodyParser = require('body-parser')
-mongoose.set('strictQuery', false);
+//mongoose.set('strictQuery', true);
 
 //database connection
-mongoose.connect('mongodb://localhost/health', {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/health', {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
 const connection = mongoose.connection;
 connection.once('open', () => {
     console.log('Database connected...');
