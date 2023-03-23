@@ -37,13 +37,14 @@
         <div class="line3"></div>
     </div>
     <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="#about-us">About Us</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-        <li><button class="login-button" href="/register">Login/Register</button></li>
+        <li><a id="a" href="/">Home</a></li>
+        <li><a id="a" href="#about-us">About Us</a></li>
+        <li><a id="a" href="/contact">Contact Us</a></li>
+        <li><button class="login-button" href="/register"><a href="/register">Register</a></button></li>
+        <li><button class="login-button" href="/login"><a href="/login">Login</a></button></li>
         <li>
           <form id="logout" action="/logout" method="POST">
-              <a onclick="document.getElementById('logout').submit()" href="#">Logout</a>
+              <a id="a" onclick="document.getElementById('logout').submit()" href="#">Logout</a>
           </form>
       </li>
     </ul>

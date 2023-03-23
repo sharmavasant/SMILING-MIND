@@ -62,7 +62,7 @@ nav {
   margin: 0 0.7vw;
 }
 
-.nav-links li a:hover {
+.nav-links li #a:hover {
   color: #61DAFB;
 }
 
