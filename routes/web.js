@@ -3,10 +3,12 @@ const dashboardController = require('../app/http/controllers/dashboardController
 const gameController = require('../app/http/controllers/gameController');
 const contact = require('../app/http/controllers/contact');
 const authController = require('../app/http/controllers/authController');
+const testController = require('../app/http/controllers/testController');
+
 
 //middlewares
 const guest = require('../app/http/middlewares/guest')
-const auth = require('../app/http/middlewares/auth')
+const auth = require('../app/http/middlewares/auth');
 
 function initRoutes(app) {
     app.get('/', homeController().index);
@@ -20,7 +22,8 @@ function initRoutes(app) {
     app.post('/logout', authController().logout);
 
     //user's dashboard
-    app.get('/dashboard', auth, dashboardController().index)
+    app.get('/dashboard', auth, dashboardController().index);
+    app.get('/test', auth, testController().index);
 }
 
 module.exports = initRoutes;
