@@ -34,11 +34,13 @@
     "express-ejs-layouts": "^2.5.0",
     "express-flash": "^0.0.2",
     "express-session": "^1.17.1",
+    "mathjs": "^10.1.1",
     "moment": "^2.27.0",
     "mongoose": "^5.9.25",
     "nodemon": "^2.0.21",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+    "socket.io": "^1.7.3",
     "vue-template-compiler": "^2.7.14"
   },
   "devDependencies": {

@@ -12,6 +12,10 @@ const MongoDbStore = require('connect-mongo')(session)
 const passport = require('passport')
 const Emitter = require('events')
 const bodyParser = require('body-parser')
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
+const moment = require('moment');
+const connectedUsers = {};
 //mongoose.set('strictQuery', true);
 
 //database connection
@@ -76,3 +80,4 @@ app.use((req, res) => {
 const server = app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 })
+
