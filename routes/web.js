@@ -11,7 +11,7 @@ const auth = require('../app/http/middlewares/auth')
 function initRoutes(app) {
     app.get('/', homeController().index);
    // app.get('/dashboard', dashboardController().index);
-    app.get('/game', gameController().index);
+    app.get('/game', auth, gameController().index);
     app.get('/contact', contact().index);
     app.get('/login', guest, authController().login);
     app.post('/login', authController().postLogin);

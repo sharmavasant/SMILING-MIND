@@ -1,8 +1,8 @@
-[.] Login/logout page.
+[+] Login/logout page.
         - Customized bootstrap.
-[.] User dashboard page and admin page.
+[+] User dashboard page and admin page.
         - Customized bootstrap.
-[.] Database connection.
+[+] Database connection.
         - MongoDB.
 [+] Home page.
         - Customized bootstrap.
