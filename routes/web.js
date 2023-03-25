@@ -15,16 +15,16 @@ function initRoutes(app) {
    // app.get('/dashboard', dashboardController().index);
     app.get('/game', auth, gameController().index);
     app.get('/contact', contact().index);
-    app.get('/login', guest, authController().login);
+    app.get('/login', authController().login);
     app.post('/login', authController().postLogin);
-    app.get('/register', guest, authController().register);
+    app.get('/register', authController().register);
     app.post('/register', authController().postRegister);
     app.post('/logout', authController().logout);
 
     //user's dashboard
     app.get('/dashboard', auth, dashboardController().index);
     app.get('/test', auth, testController().index);
-    app.get('/chat', chatController().index);
+    app.get('/chat', auth, chatController().index);
 }
 
 module.exports = initRoutes;
