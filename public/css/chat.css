@@ -67,14 +67,14 @@ textarea{
 }
 
 .incoming{
-    background: #f8f8f8; 
+    background: #000000; 
     width: fit-content;
-    color: black; 
+    color: rgb(255, 255, 255); 
 }
 
 .outgoing{
-    background: #e9eafd; 
-    color: black;
+    background: #000000; 
+    color: rgb(255, 255, 255);
     margin-left: auto;
 }
 

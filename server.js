@@ -38,11 +38,7 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('message', msg)
     })
 })
-<<<<<<< Updated upstream
-//////////////
-=======
 /////////////
->>>>>>> Stashed changes
 
 //session store
 let mongoStore = new MongoDbStore({
