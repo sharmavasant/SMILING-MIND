@@ -4,7 +4,11 @@ const gameController = require('../app/http/controllers/gameController');
 const contact = require('../app/http/controllers/contact');
 const authController = require('../app/http/controllers/authController');
 const testController = require('../app/http/controllers/testController');
+<<<<<<< Updated upstream
 const chatController = require('../app/http/controllers/chatcontroller');
+=======
+const chatController = require('../app/http/controllers/chatController');
+>>>>>>> Stashed changes
 
 //middlewares
 const guest = require('../app/http/middlewares/guest')

@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "extends": [
     "development"
   ],
@@ -13,3 +14,19 @@
     ]
   }
 }
+=======
+    "extends": [
+      "development"
+    ],
+    "hints": {
+      "compat-api/css": [
+        "default",
+        {
+          "ignore": [
+            "width: fit-content"
+          ]
+        }
+      ]
+    }
+  }
+>>>>>>> Stashed changes
