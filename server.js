@@ -12,20 +12,33 @@ const MongoDbStore = require('connect-mongo')(session)
 const passport = require('passport')
 const Emitter = require('events')
 const bodyParser = require('body-parser')
-const http = require('http').Server(app);
-const io = require('socket.io')(http);
-const moment = require('moment');
-const connectedUsers = {};
+// const http = require('http').Server(app);
+// const io = require('socket.io')(http);
+// const moment = require('moment');
+// const connectedUsers = {};
+const http = require('http').createServer(app);
 //mongoose.set('strictQuery', true);
 
 //database connection
-mongoose.connect('mongodb://localhost/health', {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
+mongoose.connect('mongodb://127.0.0.1:27017/hack_36', {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
 const connection = mongoose.connection;
 connection.once('open', () => {
     console.log('Database connected...');
 }).on('error', function(err) {
     console.log(err)
 });
+
+//socket fixing
+const io = require('socket.io')(http)
+
+io.on('connection', (socket) => {
+    console.log('Connected....') 
+
+    socket.on('message', (msg) =>{        
+        socket.broadcast.emit('message', msg)
+    })
+})
+//////////////
 
 //session store
 let mongoStore = new MongoDbStore({
@@ -66,7 +79,6 @@ app.use((req, res, next) => {
     next()
 })
 
-
 //set template engine
 app.use(expressLayout)
 app.set('views', path.join(__dirname, '/resources/views'))
@@ -77,7 +89,6 @@ app.use((req, res) => {
     res.status(404).render('error/404')
 })
 
-const server = app.listen(PORT, () => {
+const server = http.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 })
-

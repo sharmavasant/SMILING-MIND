@@ -24,7 +24,7 @@
       />
       <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-
+      <link rel="stylesheet" href="/css/chat.css">
 
 </head>
 <body>
@@ -40,14 +40,14 @@
     <ul class="nav-links">
         <li><a id="a" href="/">Home</a></li>
         <li><a id="a" href="#about-us">About Us</a></li>
-        <li><a id="a" href="/contact">Contact Us</a></li>
-        <li><button class="login-button" href="/register"><a href="/register">Register</a></button></li>
-        <li><button class="login-button" href="/login"><a href="/login">Login</a></button></li>
+        <li><a id="a" href="#contact-us">Contact Us</a></li>
+        <li><button type= "submit" class="login-button" onclick="window.location.href = '/register';">Register</button></li>
+        <li><button type= "submit" class="login-button" onclick="window.location.href = '/login';">Login</button></li>
         <li>
           <form id="logout" action="/logout" method="POST">
               <a id="a" onclick="document.getElementById('logout').submit()" href="#">Logout</a>
           </form>
-      </li>
+        </li>
     </ul>
 </nav>
     <%- body %>
@@ -70,46 +70,45 @@
     <script src="/js/app.js"></script>
     <script>
         // I will be creating a different pen with touch support but right // now I have no time for it due to school
+      const slider = document.querySelector(".items");
+      const slides = document.querySelectorAll(".item");
+      const button = document.querySelectorAll(".button");
 
-const slider = document.querySelector(".items");
-		const slides = document.querySelectorAll(".item");
-		const button = document.querySelectorAll(".button");
+      let current = 0;
+      let prev = 4;
+      let next = 1;
 
-		let current = 0;
-		let prev = 4;
-		let next = 1;
+      for (let i = 0; i < button.length; i++) {
+        button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+      }
 
-		for (let i = 0; i < button.length; i++) {
-			button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
-		}
+      const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
-		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+      const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
 
-		const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+      const gotoNum = number => {
+        current = number;
+        prev = current - 1;
+        next = current + 1;
 
-		const gotoNum = number => {
-			current = number;
-			prev = current - 1;
-			next = current + 1;
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("active");
+          slides[i].classList.remove("prev");
+          slides[i].classList.remove("next");
+        }
 
-			for (let i = 0; i < slides.length; i++) {
-				slides[i].classList.remove("active");
-				slides[i].classList.remove("prev");
-				slides[i].classList.remove("next");
-			}
+        if (next == 5) {
+          next = 0;
+        }
 
-			if (next == 5) {
-				next = 0;
-			}
+        if (prev == -1) {
+          prev = 4;
+        }
 
-			if (prev == -1) {
-				prev = 4;
-			}
-
-			slides[current].classList.add("active");
-			slides[prev].classList.add("prev");
-			slides[next].classList.add("next");
-		}
+        slides[current].classList.add("active");
+        slides[prev].classList.add("prev");
+        slides[next].classList.add("next");
+      }    
     </script>
 </body>
 </html>

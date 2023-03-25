@@ -4,6 +4,7 @@ const gameController = require('../app/http/controllers/gameController');
 const contact = require('../app/http/controllers/contact');
 const authController = require('../app/http/controllers/authController');
 const testController = require('../app/http/controllers/testController');
+const chatController = require('../app/http/controllers/chatcontroller');
 
 //middlewares
 const guest = require('../app/http/middlewares/guest')
@@ -23,6 +24,7 @@ function initRoutes(app) {
     //user's dashboard
     app.get('/dashboard', auth, dashboardController().index);
     app.get('/test', auth, testController().index);
+    app.get('/chat', chatController().index);
 }
 
 module.exports = initRoutes;
