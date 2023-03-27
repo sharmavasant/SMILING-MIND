@@ -26,15 +26,22 @@ In another terminal
 
 
 ## Screenshots
-
+Homepage
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(3).png)
+Contact us page
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(4).png)
+Register page
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(5).png)
+Login page
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(6).png)
+Dashboard
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(7).png)
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(8).png)
+Game
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(9).png)
+Heath check up quiz
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(10).png)
+Chat system
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(11).png)
 
 
