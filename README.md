@@ -45,6 +45,12 @@ Chat system
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(11).png)
 
 
+https://user-images.githubusercontent.com/99734334/228895218-839f509f-4e34-4099-99c3-d0125569b0e0.mp4
+
+https://user-images.githubusercontent.com/99734334/228895305-07662444-5706-47fb-8a08-2d5be206e7e7.mp4
+
+
+
 
 ## Contributors
 
