@@ -27,7 +27,7 @@ In another terminal
 
 ## Screenshots
 Homepage
-![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(3).png)
+![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/front.png)
 Contact us page
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(4).png)
 Register page
