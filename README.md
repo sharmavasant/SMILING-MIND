@@ -31,16 +31,16 @@ Homepage
 Contact us page
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(4).png)
 Register page
-![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(5).png)
+![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/public/img/ss1.png)
 Login page
-![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(6).png)
+![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/public/img/ss2.png)
 Dashboard
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(7).png)
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(8).png)
 Game
-![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(9).png)
+![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/public/img/ss4.png)
 Heath check up quiz
-![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(10).png)
+![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/public/img/ss5.png)
 Chat system
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(11).png)
 
