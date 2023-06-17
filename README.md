@@ -28,8 +28,6 @@ In another terminal
 ## Screenshots
 Homepage
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/public/img/front.png)
-Contact us page
-![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/screenshots/Screenshot%20(4).png)
 Register page
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/public/img/ss1.png)
 Login page
@@ -42,7 +40,8 @@ Heath check up quiz
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/public/img/ss5.png)
 Chat system
 ![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/public/img/ss6.png)
-
+Contact us page
+![App Screenshot](https://github.com/sharmavasant/SMILING-MIND/blob/main/public/img/ss3.png)
 
 https://user-images.githubusercontent.com/99734334/228895218-839f509f-4e34-4099-99c3-d0125569b0e0.mp4
 
