@@ -314,6 +314,26 @@
             </button>
           </td>
         </tr>
+        <tr class="songItem">
+          <th>4</th>
+          <td>Secret Friend</td>
+          <td>03:11</td>
+          <td>
+            <button onclick="playSong('secret-friend.mp3')">
+              <img src="/img/play.png" style="width: 50px; height: 50px" />
+            </button>
+          </td>
+        </tr>
+        <tr class="songItem">
+          <th>5</th>
+          <td>We Don't Talk Anymore</td>
+          <td>12:45</td>
+          <td>
+            <button onclick="playSong('We-Dont-Talk-Anymore.mp3')">
+              <img src="/img/play.png" style="width: 50px; height: 50px" />
+            </button>
+          </td>
+        </tr>
         <!-- Add more songs here -->
       </tbody>
     </table>
@@ -323,7 +343,7 @@
   <input type="checkbox" id="my-modal-3" class="modal-toggle" />
   <div class="modal">
     <div class="modal-box relative modal-box">
-      <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+      <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2" onclick="stopMusic()">✕</label>
       <h3 class="text-lg font-bold">Now Playing: <span id="songTitle">None</span></h3>
       
       <audio id="audioPlayer" controls></audio>
@@ -335,10 +355,10 @@
   
       <!-- Custom Controls -->
       <div class="controls">
-        <button id="playButton" onclick="togglePlayPause()">Play</button>
-        <button onclick="rewind()">Rewind 5s</button>
-        <button onclick="forward()">Forward 5s</button>
-        <button onclick="stopMusic()">Stop</button>
+        <button id="playButton" onclick="togglePlayPause()" class="btn">Play</button>
+        <button onclick="rewind()" class="btn">Rewind 5s</button>
+        <button onclick="forward()" class="btn">Forward 5s</button>
+        <!-- <button onclick="stopMusic()" class="btn">Stop</button> -->
       </div>
     </div>
   </div>
