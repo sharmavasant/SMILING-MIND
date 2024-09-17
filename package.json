@@ -1,0 +1,53 @@
+{
+  "name": "hack36",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node server.js",
+    "dev": "nodemon server.js",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharmavasant/HACK36.git"
+  },
+  "author": "vasant kumar sharma, harsh pratap singh, vikas kumar patel, sumit kasaudhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharmavasant/HACK36/issues"
+  },
+  "homepage": "https://github.com/sharmavasant/HACK36#readme",
+  "dependencies": {
+    "autoprefixer": "10.4.5",
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "bourbon": "^7.3.0",
+    "connect-mongo": "^3.2.0",
+    "cross-env": "^7.0.2",
+    "daisyui": "^2.51.4",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.1",
+    "mathjs": "^10.1.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.25",
+    "nodemon": "^2.0.21",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.6.1",
+    "vue-template-compiler": "^2.7.14"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.59.3",
+    "sass-loader": "^12.6.0"
+  }
+}

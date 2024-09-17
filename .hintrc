@@ -1,0 +1,32 @@
+{
+<<<<<<< Updated upstream
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "width: fit-content"
+        ]
+      }
+    ]
+  }
+}
+=======
+    "extends": [
+      "development"
+    ],
+    "hints": {
+      "compat-api/css": [
+        "default",
+        {
+          "ignore": [
+            "width: fit-content"
+          ]
+        }
+      ]
+    }
+  }
+>>>>>>> Stashed changes
