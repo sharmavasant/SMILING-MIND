@@ -3,13 +3,21 @@
 
 This website is for people who are mentally disturbed. It provides music, books, games, mental heath check up report and a chat system to the users so that they feel good and peaceful.
 
+## Clone the repository
+```bash
+git clone https://github.com/sharmavasant/SMILING-MIND.git
+```
+```bash
+cd SMILING-MIND
+```
+
 
 ## Installation
 
 Install all required packages with npm
 
 ```bash
-  npm init
+  npm install
 ```
 
 ## Running Tests
